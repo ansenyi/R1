@@ -1,1 +1,80 @@
-我们从头开始做一个网页！！！
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<!--<meta http-equiv="refresh" content="2"/>-->
+		<title></title>
+		<style type="text/css">
+			.fontStyle{
+				font-family: "\6977\4F53_GB2312";
+				font-size: 30px;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<p id="pp"></p>
+		<fieldset style="width: 600px;margin:0 auto;">
+			<legend>个人信息</legend>
+			<label class="fontStyle" id="name">姓名：</label> <input type="text" oncut="return false"/><br />
+			身高：<input type="text" id="name1" style="border:0" />
+			<ul>
+				<li>Div+CSS教程 系统的讲述了关于CSS布局的知识</li>
+				<li>CSS布局实例 向你呈现了中的一些实例</li>
+				<li>CSS模板下载 你可以查看一些模板</li>
+			</ul>
+			<table border="1">
+				<tr>
+					<td>第一行第一列</td>
+					<td>第一行第二列</td>
+					<td>第一行第三列</td>
+					<td width="100px"></td>
+				</tr>
+				<tr>
+					<td>第一行第一列</td>
+					<td colspan="2">第一行第二三列</td>
+					<td width="100px"></td>
+					
+				</tr>
+				<tr>
+					<td colspan="3">
+						<hr color="red" width="200px" align="left" />
+					</td>
+					<td width="100px">
+						<s>加删除线的文字</s>
+					</td>
+				</tr>
+				<small>文字</small>
+			</table>
+			<input type="button" value="查看网页源代码" onclick="window.location = 'view-source:'+ 'http://www.baidu.com'">
+			<dl>
+				<dt style="color: red;">第一组</dt>
+					<dd>一组一项</dd>
+					<dd>一组二项</dd>
+				<dt>第二组</dt>
+					<dd>二组一项</dd>
+			</dl>
+			<label>请选择一项：</label>
+			<select>
+				<optgroup label="第一组">
+					<option value="11">第一组中的第一项</option>
+					<option value="12">第一组中的第二项</option>
+					<option value="12">第一组中的第三项</option>
+				</optgroup>
+				<optgroup label="第二组">
+					<option value="21">第二组中的第一项</option>
+					<option value="22">第二组中的第二项</option>
+				</optgroup>
+				<optgroup label="第三组">
+					<option value="31">第三组中的第一项</option>
+					<option value="32">第三组中的第二项</option>
+				</optgroup>
+			</select>
+			<br />
+			<marquee direction="right" bgcolor="red" behavior="scroll" onmouseover="this.stop()" onmouseleave="this.start()" scrollamount="10" width="400px" height="20px" loop="">滚动的文字</marquee>
+			<input type="datetime-local" id="time" />
+			<input type="button" onclick="showTime()" value="显示时间" />
+		</fieldset>
+
+	</body>
+</html>
